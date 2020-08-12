@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="view-port" content="width=device-width" scale=1>
+    <title>Marina's Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+    <script src="https://kit.fontawesome.com/f708ef27bb.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/jquery.js"></script>
+  </head> 
+  <body display: block;>
+    <div class="menu">
+      <ul>
+        <div id='aboutme'><li>自己紹介</li></div>       
+        <a href="https://drive.google.com/drive/folders/1tO0RpGlZZ219bxDiyg_Dxaroo4DAHAur"></a>
+        <a href="#jump-work"><li>作品</li></a>
+        <a href="#jump-contact"><li>お問い合わせ</li></a>
+        <a class="english" href="english.html"><li>English</li></a>
+
+      </ul>
+    </div>
+    <header>
+      <div class="container">
+        <ul class="slide">
+         
+          <li><img width="100%" height="500px" src="img_1551.jpg"></li>
+          <li><img width="100%" height="500px" src="img_1598.jpg"></li>
+          <!-- <li><img width="100%" height="500px" src="IMG_1692.JPG"></li> -->
+          <li><img width="100%" height="500px" src="IMG_1700.JPG"></li>
+        </ul>
+<!-- ここからaboutモーダル -->
+      <div class="about-container">
+        <i class="fas fa-times"></i>
+        <section class="about">
+          <img class="myphoto" src="mypicture.png">
+          <section class="name">
+            <h1>Marina Kawaguchi</h1>
+            
+          </section>
+        </section>
+        <div class="profile-container">
+          <p><span>世界観を変えるために高校卒業後2年間アメリカに留学。 <br>		
+            他国からきた学生たちとのシェアハウスを通して、多種多様な価値観を知ると同時に自国日本の素晴らしさを知る。			現在、ＷＥＢを通じてグローバルな人材になるべく修行中。</span><br>
+            <span class="can">できること: HTMLコーディング・LP作成・レスポンシブ対応</span>
+          </p>
+          </div>
+          <h3><i class="far fa-envelope"></i>abcd.gmail.com</h3>
+          <h3 class="tel"><i class="fab fa-instagram-square"></i>Instagram</h3>
+      </div>
+ <!-- ここまで -->
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <a href="https://drive.google.com/drive/folders/1tO0RpGlZZ219bxDiyg_Dxaroo4DAHAur">
+          <div class="works">
+            <img src="">
+            <h1 id="jump-work">作品</h1>
+          </div>
+        </a>
+       
+         
+      
+        
+        <div id="jump-contact" class="contact"> 
+          <h1>お問い合わせ</h1>
+            <form action="https://api.staticforms.xyz/submit" method="post">
+              <input type="text" name="name" placeholder="氏名">
+              <input type="text" name="email" placeholder="メールアドレス">
+              <textarea name="message"></textarea>
+              <input type="text" name="honeypot" style="display:none">
+              <input type="hidden" name="accessKey" value=" 227fcd28-9aa0-4923-b339-b2e551f11b2f">
+              <input type="hidden" name="subject" value="Contact us from - example.com">
+              <input type="hidden" name="replyTo" value="@">
+              <input type="hidden" name="redirectTo" value="https://example.com/contact/success">
+              <input id="submit-btn" type="submit" value="送信">
+            </form>
+        </div>
+      </div> 
+    </main>
+    <footer>
+      <div class="container">
+
+      </div>
+    </footer>
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script>
+      $(document).ready(function(){
+  $('.slide').slick({
+    autoplay: true,
+    speed: 1500,
+    fade: true
+  });
+});
+    </script>
+    <script src="js/jquery.js"></script>
+     
+    
+  </body> 
+</html>

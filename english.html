@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="view-port" content="width=device-width" scale=1>
+    <title>Marina's Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+    <script src="https://kit.fontawesome.com/f708ef27bb.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/jquery.js"></script>
+  </head> 
+  <body display: block;>
+    <div class="menu">
+      <ul>
+        <div id='aboutme'><li>About Me</li></div>       
+        <a href="https://drive.google.com/drive/folders/1tO0RpGlZZ219bxDiyg_Dxaroo4DAHAur"></a>
+        <a href="#jump-work"><li>Works</li></a>
+        <a href="#jump-contact"><li>Contact</li></a>
+        <a class="japan" href="index.html"><li>日本語</li></a>
+      </ul>
+    </div>
+    <header>
+      <div class="container">
+        <ul class="slide">
+         
+          <li><img width="100%" height="500px" src="img_1551.jpg"></li>
+          <li><img width="100%" height="500px" src="img_1598.jpg"></li>
+          <!-- <li><img width="100%" height="500px" src="IMG_1692.JPG"></li> -->
+          <li><img width="100%" height="500px" src="IMG_1700.JPG"></li>
+        </ul>
+<!-- ここからaboutモーダル -->
+      <div class="about-container">
+        <i class="fas fa-times"></i>
+        <section class="about">
+          <img class="myphoto" src="mypicture.png">
+          <section class="name">
+            <h1>Marina Kawaguchi</h1>
+            
+          </section>
+        </section>
+        <div class="profile-container">
+          <p><span>I was studying abroad in California, America for 2 years to change my sense of value.<br>		
+            Through living and talking with my friends who are from another country, I could know each goodness of America and ,mother country, Japan! The experience made me interested in other countries where I'd never been. Now, I know programmer can talk with foreigners and travel all over the world through the internet, so let's work with me! thank you :)
+          </span><br>
+            <span class="can">What I can do: HTML coading・LP products・Responsive</span>
+          </p>
+          </div>
+          <h3><i class="far fa-envelope"></i>abcd.gmail.com</h3>
+          <h3 class="tel"><i class="fab fa-instagram-square"></i>Instagram</h3>
+      </div>\
+      <!-- スタイルシート -->
+      <style>
+        .profile-container span{
+          font-size: 10px;
+          line-height: 1.5em;
+        }
+        .profile-container p{
+          margin-bottom: 0;
+          margin-top: 5px;
+        }
+
+        .japan{
+          float: right;
+          padding-right: 20px;
+        }
+
+      </style>
+      <!-- スタイルシート -->
+ <!-- ここまで -->
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <a href="https://drive.google.com/drive/folders/1tO0RpGlZZ219bxDiyg_Dxaroo4DAHAur">
+          <div class="works">
+            <img src="">
+            <h1 id="jump-work">Works</h1>
+          </div>
+        </a>
+       
+         
+      
+        
+        <div id="jump-contact" class="contact"> 
+          <h1>Contact</h1>
+            <form action="https://api.staticforms.xyz/submit" method="post">
+              <input type="text" name="name" placeholder="Your Name">
+              <input type="text" name="email" placeholder="Your Email">
+              <textarea name="message"></textarea>
+              <input type="text" name="honeypot" style="display:none">
+              <input type="hidden" name="accessKey" value=" 227fcd28-9aa0-4923-b339-b2e551f11b2f">
+              <input type="hidden" name="subject" value="Contact us from - example.com">
+              <input type="hidden" name="replyTo" value="@">
+              <input type="hidden" name="redirectTo" value="https://example.com/contact/success">
+              <input type="submit" value="Submit">
+            </form>
+        </div>
+      </div> 
+    </main>
+    <footer>
+      <div class="container">
+
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script>
+      $(document).ready(function(){
+  $('.slide').slick({
+    autoplay: true,
+    speed: 1500,
+    fade: true
+  });
+});
+    </script>
+    <script src="js/jquery.js"></script>
+     
+    
+  </body> 
+</html>
