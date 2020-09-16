@@ -14,12 +14,11 @@
   </head> 
   <body display: block;>
     <div class="menu">
-      <ul>
-        <div id='aboutme'><li>About Me</li></div>       
-        <a href="https://drive.google.com/drive/folders/1tO0RpGlZZ219bxDiyg_Dxaroo4DAHAur"></a>
-        <a href="#jump-work"><li>Works</li></a>
-        <a href="#jump-contact"><li>Contact</li></a>
-        <a class="japan" href="index.html"><li>日本語</li></a>
+     <ul>
+        <a href="#aboutme"><li>Profile</li></a>     
+        <a href="#https://drive.google.com/drive/folders/1tO0RpGlZZ219bxDiyg_Dxaroo4DAHAur"><li>Works</li></a>
+        <a href="https://forms.gle/6BGEEKYwo2Jih56E7"><li>Contact</li></a>
+        <a class="english" href="index.html"><li>日本語</li></a>
       </ul>
     </div>
     <header>
@@ -32,85 +31,67 @@
         </ul>
         <div class="hello"><h1>Marina's Portfolio Site</h1>
         </div>
-    <style>
-      .hello{
-  position: absolute;
-  top: 50px;
-  left: 150px;
-  font-size: 40px;
-  font-family: 'Poppins', sans-serif;
-  color: #FFFF;
-  opacity: 0.7;
-}
-  </style>
-<!-- ここからaboutモーダル -->
-      <div class="about-container">
-        <i class="fas fa-times"></i>
-        <section class="about">
-          <img class="myphoto" src="mypicture.png">
-          <section class="name">
-            <h1>Marina Kawaguchi</h1>
-            
-          </section>
-        </section>
-        <div class="profile-container">
-          <p><span>I was studying abroad in California, America for 2 years to change my sense of value.<br>		
-            Through living and talking with my friends who are from another country, I could know each goodness of America and ,mother country, Japan! The experience made me interested in other countries where I'd never been. Now, I know programmer can talk with foreigners and travel all over the world through the internet, so let's work with me! thank you :)
-          </span><br>
-            <span class="can">What I can do: HTML coading・LP products・Responsive</span>
-          </p>
-          </div>
-          <h3><i class="far fa-envelope"></i>abcd.gmail.com</h3>
-          <h3 class="tel"><i class="fab fa-instagram-square"></i>Instagram</h3>
-      </div>\
-      <!-- スタイルシート -->
-      <style>
-        .profile-container span{
-          font-size: 10px;
-          line-height: 1.5em;
-        }
-        .profile-container p{
-          margin-bottom: 0;
-          margin-top: 5px;
-        }
-
-        .japan{
-          float: right;
-          padding-right: 20px;
-        }
-
-      </style>
-      <!-- スタイルシート -->
- <!-- ここまで -->
       </div>
     </header>
     <main>
-      <div class="container">
-        <a href="https://marina0514.github.io/digsmile/">
-          <div class="works">
-            <img src="">
-            <h1 id="jump-work">Works</h1>
-          </div>
-        </a>
-       
-         
-      
-        
-        <div id="jump-contact" class="contact"> 
-          <h1>Contact</h1>
-            <form action="https://api.staticforms.xyz/submit" method="post">
-              <input type="text" name="name" placeholder="Your Name">
-              <input type="text" name="email" placeholder="Your Email">
-              <textarea name="message"></textarea>
-              <input type="text" name="honeypot" style="display:none">
-              <input type="hidden" name="accessKey" value=" 227fcd28-9aa0-4923-b339-b2e551f11b2f">
-              <input type="hidden" name="subject" value="Contact us from - example.com">
-              <input type="hidden" name="replyTo" value="@">
-              <input type="hidden" name="redirectTo" value="https://example.com/contact/success">
-              <input type="submit" value="Submit">
-            </form>
+      <section class="profile-container">
+        <div id="scroll-btn">
+          <i class="fas fa-chevron-up"></i>
         </div>
-      </div> 
+        <h1 id="aboutme" class="animation">About Me</h1>
+      </section>
+     
+      <div class="animation profile">
+        <p class="more"><span>Living in the U.S. for 2 years to change sense of value. 
+          Thorough the experience, I was able to know there are various values and how wonderful my mother country is.<br>		
+          Currently training to become a global human resource.</span><br>
+          <span class="can">What I can do for you:・LP・Dynamic website by jQuery・Theme making for WordPress</span>
+          <a class="close" href="#gfh">閉じる</a>
+        </p>
+        <p class="greet us-p">Hi guys! I'm Marina who is crazy about WEB making haha.
+          My skill is getting better and better in order to satisfy you!<br>
+          Excited meeting you thank you:) 
+        </p>
+        <div id="more">
+          <a href="#jgj">more</a>
+        </div>
+      </div>
+  
+      <section class="animation skills">
+        <h1>SKILLS</h1>
+        <ul>
+          <li class="html">
+            <i class="fab fa-html5"></i>
+            <p>HTML5</p>
+          </li>
+          <li class="css down">
+            <i class="fab fa-css3-alt"></i>
+            <p>CSS3</p>
+          </li>
+          <li class="js">
+            <i class="fab fa-js-square"></i>
+            <p>JavaScript</p>
+          </li>
+          <li class="php down">
+            <i class="fab fa-php"></i>
+            <p>PHP</p>
+          </li>
+          <li class="github">
+            <i class="fab fa-github"></i>
+            <p>GitHUb</p>
+          </li>
+        </ul>
+      </section>
+      <div class="container">
+        <div class="works animation">
+          <h1><a href="https://drive.google.com/drive/folders/11R2zxdNorE-PeUkvA21TcyNgTGH5BV9j?usp=sharing">Works</a></h1>
+        </div>
+        <a href="https://forms.gle/6BGEEKYwo2Jih56E7">
+          <div class="contact animation">
+            <h1>Contact</h1>
+          </div> 
+        </a>
+      </div>
     </main>
     <footer>
       <div class="container">
@@ -124,7 +105,8 @@
   $('.slide').slick({
     autoplay: true,
     speed: 1500,
-    fade: true
+    fade: true,
+    arrows: false //ボタンを非表示
   });
 });
     </script>
