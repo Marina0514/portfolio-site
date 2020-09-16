@@ -369,6 +369,8 @@ main .container a{
 
   main{
     background-position-x: center;
+    background-size: cover;
+    width: 100%;
   }
 
   .profile-container h1{
@@ -456,6 +458,12 @@ main .container a{
     left: 20px !important;
     font-size: 25px !important;
     margin-top: 70px;
+  }
+	
+  main{
+    background-position-x: center;
+    background-size: cover;
+    width: 100%;
   }
 
   #more{
