@@ -15,12 +15,10 @@
   <body display: block;>
     <div class="menu">
       <ul>
-        <div id='aboutme'><li>自己紹介</li></div>       
-        <a href="https://drive.google.com/drive/folders/1tO0RpGlZZ219bxDiyg_Dxaroo4DAHAur"></a>
-        <a href="#jump-work"><li>作品</li></a>
-        <a href="#jump-contact"><li>お問い合わせ</li></a>
-        <a class="english" href="english.html"><li>English</li></a>
-
+        <a href="#aboutme"><li>自己紹介</li></a>     
+        <a href="#https://drive.google.com/drive/folders/1tO0RpGlZZ219bxDiyg_Dxaroo4DAHAur"><li>作品</li></a>
+        <a href="https://forms.gle/WDLSh9oQhK8ry93x5"><li>お問い合わせ</li></a>
+        <a class="english" href="english.html"><li>Eng</li></a>
       </ul>
     </div>
     <header>
@@ -33,67 +31,70 @@
         </ul>
          <div class="hello"><h1>Marina's Portfolio Site</h1>
         </div>
-   <style>
-      .hello{
-  position: absolute;
-  top: 50px;
-  left: 150px;
-  font-size: 40px;
-  font-family: 'Poppins', sans-serif;
-  color: #FFFF;
-  opacity: 0.7;
-}
-  </style>
-<!-- ここからaboutモーダル -->
-      <div class="about-container">
-        <i class="fas fa-times"></i>
-        <section class="about">
-          <img class="myphoto" src="mypicture.png">
-          <section class="name">
-            <h1>Marina Kawaguchi</h1>
-            
-          </section>
-        </section>
-        <div class="profile-container">
-          <p><span>世界観を変えるために高校卒業後2年間アメリカに留学。 <br>		
-            他国からきた学生たちとのシェアハウスを通して、多種多様な価値観を知ると同時に自国日本の素晴らしさを知る。			現在、ＷＥＢを通じてグローバルな人材になるべく修行中。</span><br>
-            <span class="can">できること: HTMLコーディング・LP作成・レスポンシブ対応</span>
-          </p>
-          </div>
-          <h3><i class="far fa-envelope"></i>abcd.gmail.com</h3>
-          <h3 class="tel"><i class="fab fa-instagram-square"></i>Instagram</h3>
-      </div>
- <!-- ここまで -->
       </div>
     </header>
     <main>
-      <div class="container">
-        <a href="https://drive.google.com/drive/folders/11R2zxdNorE-PeUkvA21TcyNgTGH5BV9j?usp=sharing">
-          <div class="works">
-            <img src="">
-            <h1 id="jump-work">作品</h1>
-          </div>
-        </a>
-       
-         
       
-        
-        <div id="jump-contact" class="contact"> 
-          <h1>お問い合わせ</h1>
-            <form action="https://api.staticforms.xyz/submit" method="post">
-              <input type="text" name="name" placeholder="氏名">
-              <input type="text" name="email" placeholder="メールアドレス">
-              <textarea name="message"></textarea>
-              <input type="text" name="honeypot" style="display:none">
-              <input type="hidden" name="accessKey" value=" 227fcd28-9aa0-4923-b339-b2e551f11b2f">
-              <input type="hidden" name="subject" value="Contact us from - example.com">
-              <input type="hidden" name="replyTo" value="@">
-              <input type="hidden" name="redirectTo" value="https://example.com/contact/success">
-              <input id="submit-btn" type="submit" value="送信">
-            </form>
+
+      <section class="profile-container">
+        <div id="scroll-btn">
+          <i class="fas fa-chevron-up"></i>
+        </div>
+        <h1 id="aboutme" class="animation">About Me</h1>
+      </section>
+      <div class="animation profile">
+    
+        <p class="more"><span>世界観を変えるために高校卒業後2年間アメリカに留学。 <br>		
+          他国からきた学生たちとのシェアハウスを通して、多種多様な価値観を知ると同時に自国日本の素晴らしさを知る。			現在、ＷＥＢを通じてグローバルな人材になるべく修行中。</span><br>
+          <span class="can">経験: ・HTMLコーディング・LP作成・jQueryによる動的なHP作成・WordPressによるテーマ作成</span>
+          <a class="close" href="#gfh">閉じる</a>
+        </p>
+        <p class="greet">はじめまして！マリナです。埼玉県を拠点に活動しています。プログラミング出来たらかっこいい！という単純な発想からフロントエンドの勉強をはじめ、いまやWEB制作に魅了されてしまいました（笑）<br>
+          よりご満足いただけるものができるように日々技術向上を心がけております。<br>
+          ご依頼ご相談など、お気軽にご連絡ください。
+        </p>
+        <div id="more">
+          <a href="#jgj">もっと見る</a>
         </div>
       </div> 
+      <section class="animation skills">
+        <h1>SKILLS</h1>
+        <ul>
+          <li class="html">
+            <i class="fab fa-html5"></i>
+            <p>HTML5</p>
+          </li>
+          <li class="css down">
+            <i class="fab fa-css3-alt"></i>
+            <p>CSS3</p>
+          </li>
+          <li class="js">
+            <i class="fab fa-js-square"></i>
+            <p>JavaScript</p>
+          </li>
+          <li class="php down">
+            <i class="fab fa-php"></i>
+            <p>PHP</p>
+          </li>
+          <li class="github">
+            <i class="fab fa-github"></i>
+            <p>GitHUb</p>
+          </li>
+        </ul>
+      </section>
+      <div class="container">
+        <div class="works animation">
+          <h1><a href="https://drive.google.com/drive/folders/11R2zxdNorE-PeUkvA21TcyNgTGH5BV9j?usp=sharing">作品はこちら</a></h1>
+        </div>
+        <a href="https://forms.gle/WDLSh9oQhK8ry93x5">
+          <div class="contact animation">
+            <h1>お問い合わせはこちら</h1>
+          </div> 
+        </a>
+      </div>
+    
     </main>
+    
     <footer>
       <div class="container">
 
@@ -108,7 +109,8 @@
   $('.slide').slick({
     autoplay: true,
     speed: 1500,
-    fade: true
+    fade: true,
+    arrows: false //ボタンを非表示
   });
 });
     </script>
