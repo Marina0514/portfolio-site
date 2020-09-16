@@ -88,7 +88,7 @@ main{
   opacity: 0.7;
   display: block;
   z-index: 90;
-  background-image: url('../profile.JPG');
+  background-image: url('https://raw.githubusercontent.com/Marina0514/portfolio-site/master/profile.JPG');
   background-attachment: fixed;
   background-size: contain;
   background-position-x: 60px;
