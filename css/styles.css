@@ -354,7 +354,7 @@ main .container a{
 	transform: translateY(0);
 }
 
-@media(max-width: 768px){
+@media screen and (max-width: 768px){
 
   header .container{
     margin: 0px;
@@ -446,7 +446,7 @@ main .container a{
  
 }
 
-@media(max-width: 376px){
+@media screen and (max-width: 376px){
 
   .english{
     padding: 0px;
