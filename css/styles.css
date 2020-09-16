@@ -2,17 +2,23 @@
   box-sizing: border-box;
 }
 
+h1{
+  font-size: 50px;
+}
+
 body{
   margin: 0;
   display: block;
-  font-family: Arial, Helvetica, serif;
+  font-family: 'Poppins', sans-serif;
+  width: 100%;
+  background-color: blanchedalmond;
 }
 
 header {
-  
   display: block;
   height: 500px;
   position: relative;
+  width: 100%;
 }
 
 header ul {
@@ -23,33 +29,70 @@ header ul {
 
 header .container {
   position: relative;
+  margin-right: auto;
+  margin-left: auto;
 }
-
-
-
 
 header .container h1 {
   position: absolute;
   z-index: 100;
 }
 
+
+
+.hello{
+  position: absolute;
+  top: 50px;
+  left: 150px;
+  font-family: 'Roboto Slab', serif;
+  font-style: italic;
+  color: #FFFF;
+  opacity: 0.7;
+  display: none;
+}
+
+.hello h1{
+  font-size: 70px !important;
+}
+
+#scroll-btn{
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  background: #fff;
+  color: #333;
+  text-align: center;
+  padding-top: 5px;
+  font-size: 60px;
+  right: 10px;
+  bottom: 30px;
+  margin: 60px;
+  position: fixed;
+  z-index: 2000;
+}
+
+
 .myphoto {
   display: block;
   margin-left: 20px;
-  
+  position: fixed;
 }
 
 main{
+  width: 100%;
   opacity: 0.9;
   padding: 0;
   margin-top: 0;
   margin-right: auto;
   margin-left: auto;
-  background-color: rgba(143, 238, 238, 0.5);
- 
   opacity: 0.7;
   display: block;
   z-index: 90;
+  background-image: url('../profile.JPG');
+  background-attachment: fixed;
+  background-size: contain;
+  background-position-x: 60px;
+  background-repeat: no-repeat;
 }
 
 main .container{
@@ -78,10 +121,60 @@ main .container a{
   margin-top: 20px;
 }
 
-.skills {
-  /* background-color: #ff00ff; */
-  padding-bottom: 100px;
+#more{
+  display: none;
 }
+
+.skills{
+  background: rgb(39, 34, 34);
+  opacity: 0.6;
+  padding: 0px;
+  padding-bottom: 30px;
+  color: #fff;
+}
+
+.skills h1{
+  padding-top: 50px;
+  font-family: 'Roboto Slab', serif;
+}
+
+
+.skills ul{
+  list-style-type: none;
+  display: flex;
+  /* background-color: #efef; */
+  width: 50%;
+  height: 150px;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 100px;
+  margin-top: 50px;
+}
+
+.skills li{
+  margin: 0px;
+  /* background: pink; */
+  margin: 0 auto;
+}
+
+.skills i{
+  transition-duration: 1s;
+}
+
+.skills i:hover{
+  transform: rotateX(180deg);
+}
+
+.skills p{
+  font-size: 20px;
+  margin-top: 0px;
+}
+
+.down{
+  height: 100px;
+  padding-top: 100px;
+}
+
 
 .works {
   /* background-color: #efef; */
@@ -89,19 +182,21 @@ main .container a{
   opacity: 0.5;
 }
 
+
 .contact{
   /* background-color: yellowgreen; */
   padding-bottom: 100px;
   opacity: 0.5;
 }
 footer{
-  background-color: yellow;
+  /* background-color: yellow; */
+  width: 100%;
 }
 
 .menu{
   width: 100%;
   background-color: turquoise;
-  /* background-color: #EEEE; */
+  
 
   height: 50px;
   padding-bottom: 5px;
@@ -115,7 +210,7 @@ cursor: pointer;
 }
 
 .menu li{
-  
+  font-family: 'Roboto Slab', serif !important;
   list-style-type: none;
   display: inline-block;
   margin-right: 10px;
@@ -124,118 +219,323 @@ cursor: pointer;
   float: left;
 }
 
+
 .menu ul{
   float: center;
+  font-family: 'Roboto Slab', serif;
 }
 
-.about-container {
-  background-color: #FFFFCC;
-  height: 82.5mm;
-  width: 136.5mm;
-  border: 1px solid black;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 15px;
-  line-height: 1.5em;
-  font-weight: bold;
-  position: absolute;
-  top: 90px;
-  left: 350px;
-  display: inline-block;
-  z-index: 100;
-  display: none;
 
-}
 
-.about-container p {
-  margin-right: 15px;
-  margin-left: 15px;
-  display: inline-block;
-}
 
-.name {
-  display: inline-block;
-  font-size: 35px;
-  margin-left: 15px;
-  margin-top: 30px;
-  font-family: serif;
-}
 
-.about-container h3 {
-  margin: 0;
-  text-align: right;
-  margin-right: 20px;
-}
 
-.about-container .tel {
-  margin-right: 70px;
-}
- 
+
 .profile-container {
-  text-align: left;
+  width: 100%;
+  background-color: rgb(39, 34, 34);
+  opacity: 0.8;
+  color: #fff;
+  text-align: center;
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
 
-.fa-times{
-  float: right;
-  margin: 20px
-}
-
-.profile-container span{
-font-size: 12px;
-}
 
 .can{
   font-size: 20px;
   color: blue;
 }
 
-.works{
-  background-color: chartreuse;
-  opacity: 0.7;
-  cursor: pointer;
- 
+.profile-container h1{
+  margin: 0px;
+  font-size: 50px;
+  font-family: 'Roboto Slab', serif;
 }
 
-.works:hover{
-  opacity: 1;
-}
 
-.works h1{
-font-size: 100px;
-margin-top: auto;
-margin-bottom: auto;
-/* background-color: cyan; */
-padding-top: 100px;
-letter-spacing: 5px;
 
-}
-
-input, textarea{
-  display: block;
-  margin-right: auto;
+.profile{
+  /* display: flex; */
+  width: 60%;
+  height: 550px;
+  padding-bottom: 40px;
   margin-left: auto;
-  margin-bottom: 20px;
-  width: 200px;
+  margin-right: 20px;
+  text-align: center;
 }
+
+.close{
+  display: none;
+}
+
+.profile p{
+  padding: 0px 30px;
+  margin-top: 80px;
+  }
+
+.experience{
+  width: 60%;
+  margin-left: auto;
+  display: block;
+  height: 400px;
+}
+
+.skills{
+  padding-bottom: 60px;
+}
+
+.skills h1{
+  text-align: center;
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+.skills ul{
+  margin-top: 30px;
+}
+.works, .contact{
+ 
+  width: 30%;
+  height: 30px;
+ 
+  margin-top: 50px;
+  padding-bottom: 70px;
+}
+
+.works{
+  background: palevioletred;
+  margin-left: auto;
+}
+
+main .container a{
+  text-decoration: none;
+  color: #333;
+}
+
+.contact{
+  background-color: peru;
+  margin: auto;
+}
+.works h1{
+  font-size: 40px;
+  margin: 0px;
+}
+
+.works a:hover{
+  color: #fff;
+}
+.contact h1{
+  font-size: 30px;
+  margin: 0px;
+}
+
+.contact h1:hover{
+  color: #fff;
+}
+
 
 .english{
   float: right;
   padding-right: 20px;
 }
 
-@media(max-width: 1024px){
 
-  input, textarea{
-    width: 70%;
+.animation{
+	opacity : 0;
+	visibility: hidden;
+	transition: 1s;
+	transform: translateY(30px);
+}
+/*アニメーション要素までスクロールした時のスタイル*/
+.active{
+	opacity: 0.8;
+	visibility: visible;
+	transform: translateY(0);
+}
+
+@media(max-width: 768px){
+
+  header .container{
+    margin: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
   }
-textarea{
-  height: 50px;
+
+  .hello{
+    width: 60%;
+    margin-top: 40px;
+  }
+
+  main{
+    background-position-x: center;
+  }
+
+  .profile-container h1{
+    font-size: 60px;
+  }
+
+  .profile{
+    
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .profile p{
+    width: 100%;
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    font-style: oblique;
+    /* 文字をぼかして縁取る */
+    text-shadow: -2px -2px 10px rgb(88, 86, 238); 
+  }
+
+  #more{
+    display: none;
+  }
+  
+  .close{
+    display: none;
+  }
+
+  .skills ul{
+    padding: 0px;
+    width: 80%;
+  }
+
+  .skills li{
+    
+    height: 130px;
+  }
+
+  .js{
+    text-align: center;
+    padding-left: 10px;
+  }
+
+  .html{
+    padding-right: 5px;
+  }
+
+  .skills p{
+    /* background: pink; */
+    text-align: center;
+  }
+
+  .works{
+    width: 50%;
+    display: block;
+    margin-right: auto;
+    margin-left: 0px;
+  }
+
+  .contact{
+    margin-right: 0px;
+    margin-top: 30px;
+    width: 50%;
+    padding-bottom: 50px;
+  }
+
+  .container{
+    padding-bottom: 40px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+ 
 }
 
-#submit-btn{
-  width: 30%;
-  height: 30px;
-  font-weight: bold;
-}
+@media(max-width: 376px){
 
+  .english{
+    padding: 0px;
+  }
+  .hello{
+    position: absolute !important;
+    left: 20px !important;
+    font-size: 25px !important;
+    margin-top: 70px;
+  }
+
+  #more{
+    display: block;
+  }
+  
+  .profile{
+    padding: 0px;
+  }
+
+  .profile .more{
+    background-color: rgb(39, 34, 34);
+    opacity: 0.8;
+    display: none;
+    text-shadow: none !important;
+    padding-top: 20px;
+    z-index: 100;
+  }
+
+  .us-p{
+    font-size: 30px !important;
+  }
+
+  .more .can{
+    text-shadow: -2px -2px 10px rgb(198, 198, 212); 
+  }
+
+
+  .close{
+    font-size: 10px;
+    margin: 30px 5px 5px 150px;
+    background: pink;
+    display: block;
+  }
+
+  .skills p{
+
+    display: none;
+  }
+
+  .skills ul{
+    margin-right: auto;
+    margin-left: 20px;
+    /* background: pink; */
+  }
+
+  .skills .github{
+    
+    margin-right: 50px;
+  }
+
+  .js{
+    padding-left: 20px;
+    /* background: green; */
+  }
+
+  .skills li{
+    font-size: 70px;
+  }
+    .works{
+      width: 70%;
+      margin-right: auto;
+      margin-left: auto;
+      border-radius: 50%;
+      padding-top: 15px;
+      padding-bottom: 60px;
+    }
+
+    .works h1{
+      font-size: 25px;
+    }
+    
+  .contact{
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 8px;
+    padding-top: 10px;
+  }
+  .contact h1{
+    font-size: 25px;
+  }
 }
