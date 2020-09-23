@@ -227,8 +227,9 @@ cursor: pointer;
 
 
 
-
-
+.menu a{
+  text-decoration: none;
+}
 
 
 .profile-container {
